@@ -35,10 +35,7 @@ main {
     padding-top: 10px;
 }
 
-.container {
-    max-width: 600px;
 
-}
 
 .flex {
     display: flex;
@@ -76,7 +73,7 @@ header {
 .footer-btn {
     background-color: var(--primary-color);
     height: 20px;
-    
+
 }
 
 .card {
@@ -115,9 +112,9 @@ header {
 
 
 /*responsive*/
-@media screen and(min-width: 580px) {
+@media screen and (min-width: 780px) {
     .container {
-        max-width: 500px;
+       
         background-color: var(--background-color);
     }
 
@@ -129,14 +126,14 @@ header {
     }
 
     #intro .card {
-        width: calc(100% / 3) - 1.4rem;
+        width: calc((100% / 3) - 1.5rem);
         margin-left: 0.75rem;
         margin-right: 0.75rem;
         background-color: var(--primary-light-color);
     }
 
     #intro .card:first-child {
-        width: calc(100% / 3) - 1.4rem
+        width: calc((100% / 3) - 1.5rem)
     }
 
     #testimonial .card {
@@ -157,7 +154,10 @@ header {
     #benefits .card {
         margin-left: 1rem;
         margin-right: 1rem;
-        width: calc(100% / 2) - 2rem;
+        width: calc((100% / 2) - 2rem);
     }
 
+}
+@media screen ({
+    
 }
