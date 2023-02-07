@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3684fd;
+    --primary-light-color: #b5ddff;
+    --secondary-color: #9792e4;
+    --background-color: #ffff;
+}
+
+html {
+    font-size: 16px
+        /*16 px è pari a 1 rem*/
+    ;
+    background-color: var(--background-color);
+}
+
+.debug-box {
+    height: 80px;
+    padding: 1rem;
+    background-color: var(--primary-light-color);
+}
+
+.debug-box2 {
+    height: 80px;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+
+main {
+    padding-top: 100%;
+}
+
+.container {
+    max-width: 600px;
+    left: ;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+header .site-header {
+    background-color: var(--primary-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+}
+
+
+.card {
+    margin-bottom: 1.4rem;
+}
+
+#planning {
+    background-color: var(--background-color);
+    padding: 2rem 0px;
+}
+
+#planning .column {
+    margin: 1rem 0;
+
+}
+
+#testimonial {
+    padding: 3rem 0;
+}
+
+#testimonial .card {
+    margin: 2rem;
+}
+
+#benefit {
+    background-color: var(--secondary-color);
+    padding: 4rem 0;
+}
+
+#benefit .card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*responsive*/
+@media screen and(min-width: 580px) {
+    .container {
+        max-width: 500px;
+        background-color: var(--background-color);
+    }
+
+    #intro .card {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -0.75 rem;
+        margin-right: -0.75rem;
+    }
+
+    #intro .card {
+        width: calc(100% / 3) - 1.4rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        background-color: var(--primary-light-color);
+    }
+
+    #intro .card:first-child {
+        width: calc(100% / 3) - 1.4rem
+    }
+
+    #testimonial .card {
+        display: flex;
+    }
+
+    #testimonial .card div:last-child {
+        flex-grow: 1;
+    }
+
+}
